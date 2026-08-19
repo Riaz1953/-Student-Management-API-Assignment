@@ -1,0 +1,23 @@
+{
+  "name": "student-management-api-assignment",
+  "version": "1.0.0",
+  "description": "Student Management API assignment",
+  "keywords": [
+    "student",
+    "management",
+    "assignment",
+    "api"
+  ],
+  "license": "ISC",
+  "author": "Md Riazul Islam",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "mongoose": "^9.9.3"
+  }
+}
