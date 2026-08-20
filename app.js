@@ -8,4 +8,9 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
 app.use(cookieParser());
 app.use(cors());
+
+//  import router
+import studentRouter from "./src/routes/student.route.js";
+
+app.use("/api/v1/students", studentRouter);
 export { app };
