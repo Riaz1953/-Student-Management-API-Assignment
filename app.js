@@ -11,6 +11,8 @@ app.use(cors());
 
 //  import router
 import studentRouter from "./src/routes/student.route.js";
+import userRouter from "./src/routes/user.route.js";
 
 app.use("/api/v1/students", studentRouter);
+app.use("/api/v1/user", userRouter);
 export { app };

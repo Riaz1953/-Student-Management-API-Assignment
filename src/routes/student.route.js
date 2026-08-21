@@ -3,12 +3,12 @@ import {
   deleteStudent,
   getAllStudent,
   getSingleStudent,
-  registerStudent,
+  createStudent,
   updateStudent,
 } from "../controllers/student.controller.js";
 
 const router = Router();
-router.route("/create-student").post(registerStudent);
+router.route("/create-student").post(createStudent);
 router.route("/getAll-students").get(getAllStudent);
 router.route("/get-student/:id").get(getSingleStudent);
 router.route("/update-student/:id").put(updateStudent);

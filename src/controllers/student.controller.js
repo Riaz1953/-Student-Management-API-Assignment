@@ -3,7 +3,7 @@ import { ApiResponse } from "../utils/ApiResponse.js";
 import { ApiError } from "../utils/ApiError.js";
 import { Student } from "../models/student.schema.js";
 
-const registerStudent = asyncHandler(async (req, res) => {
+const createStudent = asyncHandler(async (req, res) => {
   const { name, email, phone, age, course } = req.body;
 
   if (
@@ -77,7 +77,7 @@ const deleteStudent = asyncHandler(async (req, res) => {
     .json(new ApiResponse(200, deletedStudent, "Student deleted successfully"));
 });
 export {
-  registerStudent,
+  createStudent,
   getAllStudent,
   getSingleStudent,
   updateStudent,
