@@ -15,6 +15,10 @@ const createStudent = asyncHandler(async (req, res) => {
     !Array.isArray(course) ||
     course.length === 0
   ) {
+    throw new ApiError(
+      400,
+      "All fields (name, email, phone, age, course) are required",
+    );
   }
 
   const student = await Student.create({ name, email, phone, age, course });
